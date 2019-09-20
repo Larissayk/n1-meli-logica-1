@@ -81,47 +81,47 @@
 //     }
 // }
 
-1.1. Escreva um programa que sorteia um número de 1 a 10, dá duas chances para que o usuário acerte, 
-mas informa se o número sorteado é maior ou menor que o primeiro palpite.
+// 1.1. Escreva um programa que sorteia um número de 1 a 10, dá duas chances para que o usuário acerte, 
+// mas informa se o número sorteado é maior ou menor que o primeiro palpite.
 
-a) numero1 = número recebido do usuário;
-b) sorteado = número randômico;
-c) verificar se o número que o usuário colocou é igual ao número sorteado
-d) se numero = sorteado --> parabéns vc acertou!
-e) senão --> verificar se sorteado > número1
-f) se sorteado > numero1 = true --> Dica: o número sorteado é maior que o número1
-g) senão --> número sorteado é menor que o número 1.
-
-
-h) recebe outro número do usuário
-f) se numero2 = sorteado --> parabéns vc acertou!
-g) senão --> não foi dessa vez!
+// a) numero1 = número recebido do usuário;
+// b) sorteado = número randômico;
+// c) verificar se o número que o usuário colocou é igual ao número sorteado
+// d) se numero = sorteado --> parabéns vc acertou!
+// e) senão --> verificar se sorteado > número1
+// f) se sorteado > numero1 = true --> Dica: o número sorteado é maior que o número1
+// g) senão --> número sorteado é menor que o número 1.
 
 
-const num1 = parseInt(prompt('Escolha um número de 1 a 10:'));
-const num2 = parseInt(prompt('Escolha outro número de 1 a 10:'));
-
-let sort = Math.floor(Math.random() * 10 + 1);
-console.log('sorte fora do if e else', sort);
-
-if (num1 == sort) {
-    alert('Parabéns vc acertou de primeira!');
-} else {
-    if (sort > num1) {
-        alert(`Dica: o número sorteado é maior que ${num1}`);
-    }else {
-        alert(`Dica: o número sorteado é menor que ${num1}`)
-    }
+// h) recebe outro número do usuário
+// f) se numero2 = sorteado --> parabéns vc acertou!
+// g) senão --> não foi dessa vez!
 
 
-    num2
-    console.log('sorte dentro else: ', sort)
-    if (num2 == sort) {
-        alert(`Parabéns vc acertou! O número é ${sort}`);
-    } else {
-        alert('Não foi dessa vez!')
-    }
-}
+// const num1 = parseInt(prompt('Escolha um número de 1 a 10:'));
+// const num2 = parseInt(prompt('Escolha outro número de 1 a 10:'));
+
+// let sort = Math.floor(Math.random() * 10 + 1);
+// console.log('sorte fora do if e else', sort);
+
+// if (num1 == sort) {
+//     alert('Parabéns vc acertou de primeira!');
+// } else {
+//     if (sort > num1) {
+//         alert(`Dica: o número sorteado é maior que ${num1}`);
+//     }else {
+//         alert(`Dica: o número sorteado é menor que ${num1}`)
+//     }
+
+
+//     num2
+//     console.log('sorte dentro else: ', sort)
+//     if (num2 == sort) {
+//         alert(`Parabéns vc acertou! O número é ${sort}`);
+//     } else {
+//         alert('Não foi dessa vez!')
+//     }
+// }
 
 // 1.0 Escreva um programa que sorteia um número de 1 a 10 e dá duas chances para que o usuário acerte.
 
@@ -144,26 +144,29 @@ if (num1 == sort) {
 
 // 1.1. Escreva um programa que sorteia um número de 1 a 10, dá duas chances para que o usuário acerte, mas informa se o número sorteado é maior ou menor que o primeiro palpite.
 
-// const num1 = parseInt(prompt("Digite um número de 1 a 10"));
+const num1 = parseInt(prompt("Digite um número de 1 a 10"));
+console.log(`num1: ${num1}`);
 
-// let sorte = Math.floor(Math.random() * 10 + 1);
+let sorte = Math.floor(Math.random() * 10 + 1);
+console.log(`sorte: ${sorte}`);
 
-// if (num1 == sorte) {
-//   alert(`Parabéns vc acertou de primeira! `);
-// } else {
-//   if (sorte > num1) {
-//     alert(`O número sorteado é maior que ${num1} `);
-//   } else {
-//     alert(`O número sorteado é menor que ${num1}`);
-//   }
-//   const num2 = parseInt(prompt("Tente Novamente: Digite um número de 1 a 10"));
 
-//   if (num2 == sorte) {
-//     alert(`Parabéns, agora vc acertou!`);
-//   } else {
-//     alert(`Não foi dessa vez!`);
-//   }
-// }
+if (num1 == sorte) {
+  alert(`Parabéns vc acertou de primeira! `);
+} else {
+  if (sorte > num1) {
+    alert(`O número sorteado é maior que ${num1} `);
+  } else {
+    alert(`O número sorteado é menor que ${num1}`);
+  }
+  const num2 = parseInt(prompt("Tente Novamente: Digite um número de 1 a 10"));
+
+  if (num2 == sorte) {
+    alert(`Parabéns, agora vc acertou!`);
+  } else {
+    alert(`Não foi dessa vez!`);
+  }
+}
 
 // 1.2. Faça o mesmo programa anterior, agora com 3 palpites.
 // const num1 = parseInt(prompt("Digite um número de 1 a 10"));
@@ -290,11 +293,22 @@ if (num1 == sort) {
 // 3) se sim --> Essa palavra começa com A;
 // 4) não --> essa palavra não começa com A, tente novamente.
 
-const palavra = prompt("Digite uma palvra que começa com A:");
-console.log(palavra);
+// const palavra = prompt("Digite uma palvra que começa com A:");
+// console.log(palavra);
 
-if ((palavra.charAt(0) == 'A') || (palavra.charAt(0) == 'a')){
-    alert(`A palavra ${palavra} começa com A`);
-}else{
-    alert(`A palavra ${palavra} não começa com A, tente novamente`);
-}
+// if ((palavra.charAt(0) == 'A') || (palavra.charAt(0) == 'a')){
+//     alert(`A palavra ${palavra} começa com A`);
+// }else{
+//     alert(`A palavra ${palavra} não começa com A, tente novamente`);
+// }
+
+// 1) Pede que o usuário digite uma palavra que começa com A;
+// 2)Se a posição de "a" ou "A" for igual a 0
+// 3) Sim --> A palavra começa com A
+// 4)Nao --> A palavra começa com a
+
+// const palavra = prompt("Digite uma palvra que começa com A:");
+// console.log(palavra);
+
+// if ((palavra.charAt(0) == 'A') || (palavra.charAt(0) == 'a')){
+
